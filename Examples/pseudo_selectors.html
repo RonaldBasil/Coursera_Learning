@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pseudo Selectors</title>
+	<style>
+		/*Aligning the h1 in the center*/
+		h1{
+			text-align: center;
+			background-color: green;
+			display: block;
+		}
+		header li{
+			list-style: none;
+		}
+		/*Pseudo selectors- Usually link and visited are grouped together. Link is the way it is, link whereas visited means that html allows to change the style of the link once its clicked*/
+		a:link, a:visited{
+			text-decoration: none;
+			text-align: center;
+			background-color: blue;
+			color: black;
+			font-weight: bold;
+			border: 2px solid black;
+			display: block;
+			width: 200px;
+			margin: 2px;
+		}
+		/*Now hover is exactly what it sounds like. So when the user hovers over the element, in this case the a element. An active is that state when the user actually clicks on the element but hasn't yet released his click. So he pressed the mouse button down but hasn't yet released the button.*/
+		a:hover, a:active{
+			background-color: red;
+			margin: 10px;
+			width: 250px;
+		}
+		/*In it's simplest form, the nth child pseudo-selector allows you to target a particular element within a list.*/
+		header li:nth-child(3){
+			font-size: 20px;	
+		}
+		section div:nth-child(odd){
+			background-color: grey;
+		}
+		section div:nth-child(4):hover{
+			background-color: red;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Pseudo Selectors</h1>
+	<header>
+		<ul>
+			<li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
+			<li><a href="https://www.netflix.com/in/Login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fsignout" target="_blank">Netflix</a></li>
+			<li><a href="https://www.hotstar.com/in" target="_blank">Hotstar</a></li>
+			<li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+		</ul>
+	</header>
+	<section>
+		<div>DIV 1</div>
+		<div>DIV 2</div>
+		<div>DIV 3</div>
+		<div>DIV 4</div>
+		<div>DIV 5</div>
+		<div>DIV 6</div>
+	</section>
+</body>
+</html>
