@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Conflict Resolution</title>
+	<link rel="stylesheet" href="conflict_res_ext.css">
+	<style>
+		body{
+			font-family: Helvetica;/*Inheritance*/
+		}
+		/*All the p tags are specified in the external .css file to have a white colour but this has an origin precedence and therefore the text in the browser is seen in red colour.*/
+		p{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="background-color: black; color: yellow;">Conflict Resolution: Part-1</h1>
+	<!--All elements inside the section are coloured violet because of the style attribute declared in the the section tag.(Inheritance)But the h2 tag attribute has precedence over the section tag attribute since it has been mentioned later in the HTML page and therefore the h2 is blue coloured.-->
+	<section style="color: brown;">
+		<h2 style="color: blue;">Concepts</h2>
+		<ul style="font-style: italic;"><!--Inheritance-->
+			<li>Origin Precedence</li>
+			<li>Merge</li>
+			<li>Inheritance</li>
+			<li>Specificity</li>
+		</ul>
+	</section>
+		<h3>Origin Precedence</h3>
+		<p>When two declarations are in conflict, in other words they specify the same property for the same target, origin precedence rule kicks in, and it's a very simple rule. And the rule is, the last declaration wins. Now, when trying to figure out what the last declaration is, you have to remember that HTML is processed sequentially. That means top to bottom. So as you see the declarations happen, the lower on the page they are, the more precedence they have. And also for precedence, think of external CSS as declared at the spot where it's linked to.</p>
+		<h3>Merge</h3>
+		<!--Similarly for p tag-->
+		<p style="color: green;">When different CSS declarations do not conflict, that is, they still target the same element, but the CSS properties with which they target that element are different, there's even a simpler rule. And that is that declarations merge. So a declaration for, for example, font size, and a declaration for color, since they're two different properties, when they're targeted to the same element, even if they're targeted from two different origins, they will merge into one. And the element will get both the font size and the color.</p>
+</body>
+</html>
