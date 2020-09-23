@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Box Model</title>
+	<style>
+		*{
+			box-sizing: border-box; /*Very Important (Lecture 19 part 1 and 2)*/
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			background-color: gray;
+		}
+		#box{
+				background-color: blue;
+				padding: 10px 30px 10px 30px;
+				border: 20px solid black;
+				width: 300px;
+				height: 200px;
+				overflow: auto; /*Saving the texting from overlapping*/
+		}
+		#content{
+			background-color: green;
+		}
+		h1{
+			margin-bottom: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Box Model</h1>
+	<div id="box">
+		<div id="content">Content, Padding, Border, Margin. A little more gibberish.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisl risus, suscipit at volutpat et, mattis porta dui. Ut gravida nibh libero, id cursus nisi lobortis sit amet. Sed id leo et orci dictum elementum et ac tellus. Etiam molestie aliquet nunc, eu faucibus augue mollis at. Donec fringilla, urna et auctor maximus, dolor metus pulvinar ex, ut finibus odio sem non risus.dolor.</div>
+	</div>
+</body>
+</html>
