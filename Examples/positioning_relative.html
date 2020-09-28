@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Element Positioning: Relative</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		h1{
+			margin-bottom: 15px;
+		}
+		div#container{
+			background-color: blue;
+		}
+		p{
+			border: 2px solid black;
+			width: 50px;
+			height: 50px;
+			margin-bottom: 15px;
+		}
+		#p1{
+			background-color: red;
+			position: relative;
+			top: 65px;
+			left: 65px;
+		}
+		#p2{
+			background-color: orange;
+		}
+		#p3{
+			background-color: yellow;
+		}
+		#p4{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<h1>Positioning Elements</h1>
+	<div id="container">
+		<p id="p1"></p>
+		<p id="p2"></p>
+		<p id="p3"></p>
+		<p id="p4"></p>
+	</div>
+</body>
+</html>
