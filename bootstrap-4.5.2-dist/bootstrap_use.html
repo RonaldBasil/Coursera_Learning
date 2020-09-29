@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Page</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles1.css">
+</head>
+<body>
+	<div class="container-fluid">
+			<!-- md stands for anything greater than 720px -->
+			<div class="row">
+			<div class="col-md-4">Col 1</div>
+			<div class="col-md-4">Col 2</div>
+			<div class="col-md-4">Col 3</div>
+			</div>
+			<!-- sm stands for anything greater than 540px -->
+			<!-- Also merging the classes together -->
+			<div class="row">
+			<div class="col-md-4 col-sm-6">Col 1</div>
+			<div class="col-md-4 col-sm-6">Col 2</div>
+			<div class="col-md-4 col-sm-6">Col 3</div>
+			</div>
+			<!-- xs will remain as it is how much ever small the screen becomes -->
+			<div class="row">	
+			<div class="col-xs">Col 1</div>
+			<div class="col-xs">Col 2</div>
+			<div class="col-xs">Col 3</div>
+			</div>
+	</div>
+	<!-- jQuery(Bootstrap JS plugins depend upon it) -->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
