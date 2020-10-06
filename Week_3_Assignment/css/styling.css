@@ -1,0 +1,37 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-size: 16px;
+	color: white;
+	background-color: gray;
+}
+#header-nav{
+	background-color: white;
+	/*padding-bottom: 15px;*/
+	margin-bottom: 30px;
+}
+.navbar-brand{
+	padding: 20px;
+}
+.navbar-brand h1{
+	color: orange;
+	font-size: 3em;
+	text-shadow: 1px 1px 1px black;
+	font-weight: bold;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+.text-box{
+	border: 1px solid white;
+	background-color: chocolate;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+#menu-title {
+	margin-bottom: 25px;
+}
+#nav-list a{
+	text-align: center;
+}
